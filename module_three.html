@@ -175,19 +175,19 @@ My summary post demonstrates my capability to critically analyse data wrangling 
 									<h3> Normalisation Task </h3>
 
 									<p> Our task is to normalise the table below. </p>
-									<p> <img src ="images/Normalisation Task.jpg"</p>
+									<p> <img src ="images/Normalisation Task.jpg"></p>
 									<p> To satisfy the first normal form, every value should be atomic and each row should be unique. There must also be a primary key (unique identifier) for each set of related data. We have creted a new unique identifier called 'Exam ID' so we can split this into two tables, a Student table and an StudentExam table. In the Student table the primary key is 'Student Number' and in the StudentExam table, it is 'Exam ID'. </p>
-									<p> <img src ="images/Normalisation 1nS.jpg" alt = "Student Table" Title = "Student Table"</p>
+									<p> <img src ="images/Normalisation 1nS.jpg" alt = "Student Table"></p>
 
-									<p> <img src ="images/Normalisation 1n StudentExam.jpg" alt= "StudentExam Table" title = "StudentExam Table"</p>
+									<p> <img src ="images/Normalisation 1n StudentExam.jpg" alt= "StudentExam Table"></p>
 
 									<p> To satisfy the second normal form, the table must already be in the first form and every column that is not part of the primary key should be dependent on the primary key. In other words, their is no partial dependency. In our case, in the StudentExam table, 'Exam Score' is related to the student which means it is not fully dependant on 'Exam ID' which violates the second norm. To resolve this, we can split the StudentExam table into two tables to maintain the relationship between students and courses. We will split this into two tables, one called StudentCourse and one called Exam.</p>
-									<p> <img src ="images/Normalisation 2n SC.jpg" alt = "StudentCourse Table" Title = "StudentCourse Table"</p>
-									<p> <img src ="images/Normalisation 2n E.jpg" alt = "Exam Table" Title = "Exam Table"</p>
+									<p> <img src ="images/Normalisation 2n SC.jpg" alt = "StudentCourse Table"></p>
+									<p> <img src ="images/Normalisation 2n E.jpg" alt = "Exam Table"></p>
 
 									<p> Finally to satisfy the third normal form, the table must already be in the second form that every column that is not part of the primary key can only be dependent on the primary key itself, in other words there can be no transitive dependencies. In our case, in the Exam table, we can see 'Teacher Name' is dependent on 'Exam Boards'. This is a transitive dependency. To resolve this, we need to move 'Exam Boards' and 'Teacher Name' into a seperate table.</p>
-									<p> <img src ="images/Normalisation 3n UE.jpg" alt = "Updated Exam Table" Title = "Updated Exam Table"</p>
-									<p> <img src ="images/Normalisation 3n B.jpg" alt = "Boards Table" Title = "Boards Table</p>
+									<p> <img src ="images/Normalisation 3n UE.jpg" alt = "Updated Exam Table"></p>
+									<p> <img src ="images/Normalisation 3n B.jpg" alt = "Boards Table"></p>
 									<p> The data has now been normalised, the four final tables would be the Student Table, the StudentCourse Table, the Updated Exam Table and the Boards Table.</p>
 
 									
