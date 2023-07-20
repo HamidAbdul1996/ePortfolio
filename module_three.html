@@ -255,6 +255,37 @@ In terms of enforcement, it is notable that while the GDPR imposes substantial f
 									
 								
 										
+									<h3> 6. API Security Requirements </h3>
+									<h3> Learning Outcomes </h3>
+									<ul>
+										<li>Identify and manage challenges, security issues and risks, limitations, and opportunities in data wrangling. </li>
+										<li> Critically analyse data wrangling problems and determine appropriate methodologies, tools, and techniques (involving preparing, cleaning, exploring, creating, optimising and evaluating big data) to solve them. </li>
+										<li> Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real life perspectives on team roles and organisation. </li>
+									</ul>
+									<p> Spotify API Security Requirements Specification
+For my evaluation, I have selected the Spotify Web API due to its extensive capabilities. This API provides applications with an interface to interact with Spotify's music streaming service, enabling access to a diverse range of resources, such as Spotify's music catalogue, playlist management, and even playback control. However, despite its functionality, it is not immune to potential threats. Unauthorised access, privilege escalation, Cross-Site Request Forgery (CSRF), Cross-Site Scripting (XSS), token hijacking, Denial of Service (DoS), and data breaches remain significant concerns that warrant comprehensive security measures.
+
+At the heart of these measures lies the concept of authorisation. With Spotify API, each request necessitates valid client credentials, including a client ID and a secret. Spotify capitalises on the versatility of OAuth2, employing its four grant types for access token requests. In this context, the authorisation code flow is especially beneficial for long-lasting applications, such as web and mobile apps. Ensuring tokens are securely stored, separate from client-side code or logs, can effectively thwart attempts at unauthorised access and privilege escalation (Spotify Developer, 2023).
+
+When it comes to external data, it is imperative to conduct thorough cleansing to mitigate risks like injection, XSS, and DoS attacks. SQL interactions mandate the use of parameterised queries, a critical tool in preventing SQL injection attacks, thus treating user input as data, not executable code (Spotify Developer, 2023).
+
+Data encryption is non-negotiable when transmitting sensitive data over the network. The HTTPS protocol is a reliable choice, offering robust encryption for data in transit. API keys and other sensitive data must be stored securely, utilising methods such as Python-dotenv for managing environment variables, or even opting for a separate Python file (Spotify Developer, 2023).
+
+
+Further mitigation strategies incorporate the use of the secure OAuth 2.0 protocol for user authentication and authorisation. In addition, validating and sanitising user inputs is crucial to fend off XSS attacks. All interactions with the Spotify API should be conducted over HTTPS, fortifying data during transit and minimising the risk of token hijacking. Periodic security audits are strongly recommended to promptly identify and rectify any vulnerabilities (Spotify Developer, 2023).
+
+Conforming to Spotify's Terms of Service, privacy policy, and pertinent laws is a prerequisite for data sharing. The use of secure encryption methods, particularly over public networks, is advised. Given that Spotify's Terms of Service typically frown upon web scraping, data acquisition should be facilitated via the official API, mindful of rate limits and access scopes. Importantly, any data procured from Spotify should be stored securely, with access granted only to authorised personnel.
+</p>
+									<p><b>References</b></p>
+									
+
+									<p>Spotify Developer (2023) Authorisation. Available from: https://developer.spotify.com/documentation/web-api/concepts/authorization. [Accessed on 20th July 2023]. </p>
+									<p>Spotify Developer (2023) Authorisation Code Flow. Available from: https://developer.spotify.com/documentation/web-api/tutorials/code-flow. [Accessed on 20th July 2023]. </p>
+									<p>Spotify Developer (2023) API calls. Available from: https://developer.spotify.com/documentation/web-api/concepts/api-calls. [Accessed 20th July 2023]. </p>
+									<p> Spotify Developer (2023) Web API. Available from: https://developer.spotify.com/documentation/web-api. [Accessed 20th July 2023].</p>
+									<p> Spotify Developer (2023) Compliance Tips. Available from: https://developer.spotify.com/compliance-tips. [Accessed 20th July]. </p>
+
+									<h3> Reflections</h3>
 									
 									<h3>Meeting Recordings First4Aid Application </h3>
 									<html>
