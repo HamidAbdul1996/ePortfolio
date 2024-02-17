@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<!--
+-->
+<html>
+	<head>
+		<title>Generic - Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>hamidabdul</strong> <span></span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Introduction to Artifical Neural Networks (ANNs)</h1>
+									</header>
+									<p>
+										This unit marked my introduction to artificial neural networks, a topic that was entirely new to me. I was eager to learn about it, given its growing significance in the field. AI and machine learning jobs have jumped by almost 75% in the past four years, and the demand is expected to continue for the foreseeable future (Victoire et al, 2023).  Deep learning is at the forefront of the field, so I was very motivated to learn. 
+In the online lesson, we started by learning what a perceptron is. A perceptron is a fundamental unit of artificial neural networks, designed for binary classification by summing weighted inputs and a bias to decide whether to activate (output 1) or no (ouput 0), it adjusts its weights through training to learn decision boundaries (Kim & Kim, 2021). It was developed by Frank Rosenblatt in 1957 as a model of a biological neuron in the brain.  
+
+									</p>
+									<h4><u> Artefacts</u></h4>
+									<p> The Unit 7 notebooks can be found below. 
+										<ul>
+											<li><a href="https://github.com/HamidAbdul1996/ePortfolio/blob/main/artefacts/Unit07%20Ex1%20simple_perceptron.ipynb" target="_blank">Simple Perceptron</a></li>
+											<li><a href="https://github.com/HamidAbdul1996/ePortfolio/blob/main/artefacts/Unit07%20Ex2%20perceptron_AND_operator.ipynb" target="_blank">Perceptron AND operator</a></li>
+											<li><a href="https://github.com/HamidAbdul1996/ePortfolio/blob/main/artefacts/Unit07%20Ex3%20multi-layer%20Perceptron.ipynb" target="_blank">Multi layer Perceptron</a></li>
+											
+										</ul>
+										<h4><u>Reflection</u></h4>
+										<p> 
+											Reflecting on this task, I think it is always extremely beneficial to grasp the mathematical principles and operations underlying the concepts we learn about. In an environment, where functions are readily available it's very easy to forget what is happening in the ‘black box’. Engaging with this work has deepened my understanding of the mechanisms behind the scenes and I have no doubt it will enhance my ability to experiment with hyperparameters and also improve my debugging skills for models (Tyagi, 2020). 
+In terms of the multi-layered perceptron (MLP) and the sigmoid function, I can now appreciate some key points that are relevant to the use of machine learning algorithms across varied datasets. The experience showed me the impact of activation function selection on a model's capacity to capture non-linear relationships and how different datasets can benefit from different activation functions. Additionally, the choice of input features and how data is represented can significantly influence the performance of machine learning algorithms. 
+With regard to the sigmoid function, I also researched the vanish gradient challenge that can come with sigmoid. Essentially in deep MLPs, gradients can vanish or explode during backpropagation making it difficult to train the network effectively. This happens because of the shape of the sigmoid function. When inputs are very large or very small, the output becomes very close to 1 or 0 respectively. Because the derivative of the sigmoid function is very small at the extremes, the gradients become very small (close to zero) when the sigmoid function saturates (Hochreiter, 1998). In deep networks, the backpropagation involves multiplying these small gradients across many layers. This multiplication exacerbates the problem, leading to even smaller gradients as the calculation moves back through the network to the input layer. As a result, the gradients can become so small that they effectively "vanish". This means that the weights of the neurons in the earlier layers of the network barely get updated during training. Since these updates are crucial for learning, the vanishing gradient problem can severely hinder the network's ability to learn from the data, particularly affecting the learning of long-term dependencies and complex patterns.
+
+										</p>
+										<h4><u> Reference List</u></h4>
+										<li> Hochreiter, S. (1998) The Vanishing Gradient Problem During Learning Recurrent Neural Nets and Problem Solutions. International Journal of Uncertainty Fuzziness and Knowledge-Based Systems. 6(2) 107-116. DOI: 10.1142/S0218488598000094 </li>
+										<li> Kim, E.H. & Kim, H.S.K. (2021) Perceptron: Basic Principles of Deep Neural Networks. Cardiovascular Prevention and Pharmacotherapy. 3(3): 65-72</li>
+										<li> Tyagi, H. (2020) Practical reasons to learn mathematics for Data Science. Available from: https://towardsdatascience.com/practical-reasons-to-learn-mathematics-for-data-science-1f6caec161ea. [Accessed 16th February 2024].</li>
+										<li> Victoraire, T.A., Karunmurthy, A., Vasuki, M. & Sharmila, A. (2023) Deep Learning for Job Automation Revolutionising the Workforce. International Journal of Research in Engineering, Science and Management. 6(6: 162-166. </li>
+										<span class="image main"><img src="images/pic11.jp" alt="" /></span>
+									
+			
+                                    
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">hamidabdul1996@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span></span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span><br />
+										<br />
+										</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/HamidAbdul1996?tab=repositories?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/hamid-abdul-3ba206106/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
