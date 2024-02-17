@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+-->
+<html>
+	<head>
+		<title>Generic - Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>hamidabdul</strong> <span></span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Clustering with Python</h1>
+									</header>
+                                    <p>
+                                        In this unit, we started to use Scikit-learn to employ clustering algorithms and also looked at Principal Component Analysis (PCA). PCA is a dimensionality reduction technique that transforms a dataset into a set of principal components, it's used to simplify complex datasets, improve model performance by eliminating redundant features and help in uncovering patterns in the data that might not be immediately apparent (Chahboun & Maaroufi, 2021). 
+                                    </p>
+                                    <h4><u> Artefact</u></h4>
+                                    <p> The Unit 6 seminar notebook can be seen <a href="https://github.com/HamidAbdul1996/ePortfolio/blob/main/artefacts/Unit%206%20K%20means.ipynb" target="_blank" >here</a>. I will highlight the main features below.</p>
+                                    <img src = "images\ML\Unit 6 elbow method.JPG">
+                                    <p> 
+                                        The elbow method above shows one way to pick the ideal number of clusters. The elbow method calculates the number of clusters by plotting the within-cluster sum of squares (WCSS) against the number of clusters and identifying the point where the decrease in WCSS begins to slow down, resembling an "elbow". In the above picture, the ideal number of clusters is 4. Choosing the ideal number of clusters is important as it improves model performances and ensures that the natural groups within the data are accurately represented (Coraggio & Coretto, 2023). 
+                                    </p>
+                                    <img src ="images\ML\Unit 6 Clustering group.JPG">
+                                    <p> The code presented above demonstrates how to construct a clustering model and calculate the average values of variables within each cluster.</p>
+                                    <img src = "images\ML\Unit 6 PCA.JPG">
+                                    <P>
+                                        This example of PCA illustrates its ability to reduce data to two dimensions, enabling us to visualise the data on a scatter plot and clearly identify distinct groups.
+                                    
+                                    </P>
+                                    <h4><u> Reflection</u></h4>
+                                    <p>Reflecting on this seminar, I found it to be fairly straightforward, and I understood everything I completed. An aspect that stood out to me was the discussion on the inapplicability of categorical variables in clustering analyses that use Euclidean distance. The point was interesting, considering that in our Unit 6 assessment, my team and I incorporated categorical variables such as the borough of New York, which we managed through one-hot encoding. At the time, we proceeded thinking this approach would be fine however the insights gained from this seminar and the reading have led me to understand that converting categorical variables into numerical values can inadvertently establish an ordinal relationship when there isn’t one. This also increases the dimensionality of the dataset which can cause challenges. The clusters in our project were not particularly insightful so this could be why. 
+                                        This also led me to look into other distance measures for K-means clustering and the context in which you would implement them. Two others I studied were the Hamming distance and the Jaccard distance. Going forward I will spend more time studying these hyperparameters to better understand the context to use them. 
+                                         </p>
+                                         <h4><u> Reference List</u></h4>
+                                         <li>Chahboun, S. & Maaroufi, M. (2021) Principal Component Analysis and Machine Learning Approaches. Applied Sciences. 11(17) DOI: https://doi.org/10.3390/app11177943 </li>
+                                         <li> Coraggio, L. & Coretto, P. (2023) Selecting the number of clusters, clustering models and algorithms. A unifying approach based on the quadratic discriminant score. Journal of Multivariate Analysis (196) DOI: https://doi.org/10.1016/j.jmva.2023.105181</li>
+									<span class="image main"><img src="images/pic11.jp" alt="" /></span>
+									
+			
+                                    
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">hamidabdul1996@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span></span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span><br />
+										<br />
+										</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/HamidAbdul1996?tab=repositories?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/hamid-abdul-3ba206106/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
